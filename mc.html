@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href = css/style.css>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/funciones.js"> </script>
+    <style>
+    @font-face {
+      font-family: 'Dimbo';
+      src: url('imagenes/fontDimbo/Dimbo Regular.ttf') format('ttf'),
+    }
+    body {
+      font-family:"Dimbo";
+      height:100%;
+      background-color: black;
+    }
+    </style>
+
+  </head>
+  <body onload="intro()" >
+
+    <div class="medallacontainer" id="medallacontainer">
+      <img class="medalla" id="medalla" src="imagenes/medallaOp1.png" alt="fondo">
+    </div>
+
+    <div class="tablero" id="tablero">
+      <div class="tableroPlayer">
+        Jugador =
+        <div class="scorePlayers" id="scorePlayer">
+          5
+        </div>
+      </div>
+
+      <p class="division" id="division"> </p>
+      <div class="tableroLucy">
+        Lucy =
+        <div class="scorePlayers" id="scoreLucy">
+          5
+        </div>
+      </div>
+
+    </div>
+
+    <div class="fondo" id="fondo">
+      <img class="p1" id="p1" src="imagenes/p1.png" alt="mc">
+      <img class="lucy" id="lucy" src="imagenes/lucy.png" alt="mc">
+
+      <div class="letreroAnimado" id="letreroAnimado"> 3 </div>
+      <btn class="btnEmpezar" id="btnEmpezar"  onclick="empezar()">
+        <img class="imgbtnEmp" id="imgbtnEmpezar" src="imagenes/btnEmpezar.png"  alt="btn">
+      </btn>
+
+      <div class="G1" id="G1">
+        <div class="divG" id="G1paletC1">
+          <img class="palet" id="G1palet1" src="imagenes/palet.png" alt="mc">
+            <div class="cajaContainer" id="cajaContainer1G1">
+              <!-- cajas creadas dinamicamente -->
+            </div>
+        </div>
+
+        <div class="divG" id="G1paletC2">
+          <img class="palet" id="G1palet2" src="imagenes/palet.png" alt="mc">
+          <div class="cajaContainer" id="cajaContainer2G1">
+            <!-- cajas creadas dinamicamente -->
+          </div>
+        </div>
+
+        <div class="divG" id="G1paletC3">
+          <img class="palet" id="G1palet3" src="imagenes/palet.png" alt="mc">
+          <div class="cajaContainer" id="cajaContainer3G1">
+            <!-- cajas creadas dinamicamente -->
+          </div>
+        </div>
+
+        <div class="divG" id="G1paletC4">
+          <img class="palet" id="G1palet4" src="imagenes/palet.png" alt="mc">
+          <div class="cajaContainer" id="cajaContainer4G1">
+            <!-- cajas creadas dinamicamente -->
+          </div>
+        </div>
+      </div>
+
+      <div class="G2" id="G2">
+        <div class="divG" id="G2paletC1">
+          <img class="palet" id="G2palet1" src="imagenes/palet.png" alt="mc">
+          <div class="cajaContainer" id="cajaContainer1G2">
+
+          </div>
+        </div>
+
+        <div class="divG" id="G2paletC2">
+          <img class="palet" id="G2palet2" src="imagenes/palet.png" alt="mc">
+          <div class="cajaContainer" id="cajaContainer2G2">
+
+          </div>
+        </div>
+
+        <div class="divG" id="G2paletC3">
+          <img class="palet" id="G2palet3" src="imagenes/palet.png" alt="mc">
+          <div class="cajaContainer" id="cajaContainer3G2">
+
+          </div>
+        </div>
+
+        <div class="divG" id="G2paletC4">
+          <img class="palet" id="G2palet4" src="imagenes/palet.png" alt="mc">
+          <div class="cajaContainer" id="cajaContainer4G2">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="G3" id="G3">
+        <div class="divG" id="G3paletC1">
+          <img class="palet" id="G3palet1" src="imagenes/palet.png" alt="mc">
+          <div class="cajaContainer" id="cajaContainer1G3">
+
+          </div>
+        </div>
+
+        <div class="divG" id="G3paletC2">
+          <img class="palet" id="G3palet2" src="imagenes/palet.png" alt="mc">
+          <div class="cajaContainer" id="cajaContainer2G3">
+
+          </div>
+        </div>
+
+        <div class="divG" id="G3paletC3">
+          <img class="palet" id="G3palet3" src="imagenes/palet.png" alt="mc">
+          <div class="cajaContainer" id="cajaContainer3G3">
+
+          </div>
+        </div>
+
+        <div class="divG" id="G3paletC4">
+          <img class="palet" id="G3palet4" src="imagenes/palet.png" alt="mc">
+          <div class="cajaContainer" id="cajaContainer4G3">
+          </div>
+        </div>
+      </div>
+
+      <div class="G4" id="G4">
+        <div class="divG" id="G4paletC1">
+          <img class="palet" id="G4palet1" src="imagenes/palet.png" alt="mc">
+          <div class="cajaContainer" id="cajaContainer1G4">
+
+          </div>
+        </div>
+
+        <div class="divG" id="G4paletC2">
+          <img class="palet" id="G4palet2" src="imagenes/palet.png" alt="mc">
+          <div class="cajaContainer" id="cajaContainer2G4">
+
+          </div>
+        </div>
+
+        <div class="divG" id="G4paletC3">
+          <img class="palet" id="G4palet3" src="imagenes/palet.png" alt="mc">
+          <div class="cajaContainer" id="cajaContainer3G4">
+
+          </div>
+        </div>
+
+        <div class="divG" id="G4paletC4">
+          <img class="palet" id="G4palet4" src="imagenes/palet.png" alt="mc">
+          <div class="cajaContainer" id="cajaContainer4G4">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <audio id="aud" src="sonidos/race_song.mp3"></audio>
+
+
+  </body>
+</html>
