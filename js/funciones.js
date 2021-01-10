@@ -568,7 +568,7 @@ function empezar(){
     letAn.style.backgroundColor = "transparent";
     letAn.style.borderStyle = "none";
     letAn.style.color = "red";
-    letAn.style.fontSize = "20vh";
+    letAn.style.fontSize = "16vh";
 
     letAn.innerHTML=3;
     var count=3;
@@ -648,7 +648,7 @@ function tutorial(){
     letAn.style.backgroundColor = "transparent";
     letAn.style.borderStyle = "none";
     letAn.style.color = "red";
-    letAn.style.fontSize = "20vh";
+    letAn.style.fontSize = "16vh";
 
 
     letAn.innerHTML=3;
